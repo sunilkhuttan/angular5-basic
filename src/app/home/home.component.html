@@ -1,0 +1,14 @@
+<p>
+  home works! ({{items}})
+</p>
+  <form>
+    <input type="text" class="txt" name="item" placeholder="life goal.." [(ngModel)]="goalText">
+    <input type="submit" class="btn" [value]="btnText" (click)="addItem()">
+    <br>
+    <span>{{ goalText }}</span>
+    <p *ngFor="let goal of goals">
+      {{ goal }}
+    </p>
+
+  </form>
+
